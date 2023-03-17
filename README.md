@@ -10,6 +10,9 @@ npx hardhat test
 REPORT_GAS=true npx hardhat test
 npx hardhat node
 
-deploy ballot contract
+deploy lottery contract
 yarn run ts-node --files ./scripts/Deploy.ts
+
+open betting contract
+yarn run ts-node --files ./scripts/OpenBets.ts "seconds_of_duration"
 ```
