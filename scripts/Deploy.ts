@@ -5,7 +5,7 @@ dotenv.config();
 
 const BET_PRICE = 1;
 const BET_FEE = 0.2;
-const TOKEN_RATIO = 1;
+const TOKEN_RATIO = 1000;
 
 
 async function main() {
@@ -44,7 +44,7 @@ async function main() {
     const contractAddress = transactionReceipt.contractAddress;
     const blockNumber = transactionReceipt.blockNumber;
     const tokenContractAddress = await lotteryContract.paymentToken();
-    console.log(`Lottery contract deployed at ${contractAddress} and block number ${blockNumber} \n lottery token for is on address ${tokenContractAddress}`);
+    console.log(`Lottery contract deployed at ${contractAddress} and block number ${blockNumber} \n lottery token is on address ${tokenContractAddress}`);
 }
 
 main().catch((error) => {
