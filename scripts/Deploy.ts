@@ -1,5 +1,7 @@
 import { ethers } from "ethers";
+import * as dotenv from "dotenv";
 import { Lottery__factory } from "../typechain-types";
+dotenv.config();
 
 const BET_PRICE = 1;
 const BET_FEE = 0.2;
